@@ -1,1 +1,45 @@
+PS C:\Users\at174> mkdir git_challenge
 
+
+    ディレクトリ: C:\Users\at174
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        2025/01/10     17:19                git_challenge
+
+
+PS C:\Users\at174> cd git_challenge
+PS C:\Users\at174\git_challenge> git init
+Initialized empty Git repository in C:/Users/at174/git_challenge/.git/
+PS C:\Users\at174\git_challenge> #Hello_world.txtファイルを作成して初期内容を追加
+PS C:\Users\at174\git_challenge> "Hello, world!" > hello_world.txt
+PS C:\Users\at174\git_challenge> #　ファイルをステージングしてコミット
+PS C:\Users\at174\git_challenge> git add hello_world.txt
+PS C:\Users\at174\git_challenge> git commit -m "Add hello_world.txt with initial content"
+[main (root-commit) 0bacb20] Add hello_world.txt with initial content
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hello_world.txt
+PS C:\Users\at174\git_challenge> #2行目の内容を追記する
+PS C:\Users\at174\git_challenge> "こんにちわ、世界！" >> hello_world.txt
+PS C:\Users\at174\git_challenge> #ファイルをステージングして2回目のコミット
+PS C:\Users\at174\git_challenge> git add hello_world.txt
+PS C:\Users\at174\git_challenge> git commit -m "Add second line to hello_world.txt"
+[main 814e234] Add second line to hello_world.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+PS C:\Users\at174\git_challenge> #git logコマンドでファイルの変更履歴を表示する
+PS C:\Users\at174\git_challenge> git log --oneline hello_world.txt
+814e234 (HEAD -> main) Add second line to hello_world.txt
+0bacb20 Add hello_world.txt with initial content
+PS C:\Users\at174\git_challenge> mkdir kadai_005
+
+
+    ディレクトリ: C:\Users\at174\git_challenge
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        2025/01/10     17:31                kadai_005
+
+
+PS C:\Users\at174\git_challenge> cd kadai_005
